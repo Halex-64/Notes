@@ -1,0 +1,16 @@
+#body-semNotas{
+  height: 100%;
+  width: 100%;
+}
+.semNotas{
+  display: flex;
+  padding: 36px 57px;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 207px;
+}
+.p__semNotas{
+  color: rgba(255, 255, 255, 0.25)
+}
+
