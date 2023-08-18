@@ -1,0 +1,42 @@
+.formulario-criar-nota{
+  margin-left: 200px;
+  justify-content: center;
+  width: 500px;
+  height: 350px;
+  border-radius: 5px 5px 5px 5px;
+  background: #202124;
+}
+.cabecalho-formulario{
+  border: 5px 5px 5px 5px;
+  display: flex;
+  width: auto;
+  padding: 5px 14px;
+  background-color: #FFF;
+}
+.botao-criar{
+  display: inline-flex;
+  padding: 9px 23px 8px 24px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  background: #FFF;
+  border-color: #FFF;
+}
+.criar-nota-input{
+  background-color: transparent;
+  color: #BDBDBD;
+  margin-top: 151px;
+  margin-left: 12px;
+  font-size: 20px;
+  font-weight: 400;
+}
+.icon{
+  height: 24px;
+  width: 24px;
+}
+.icons-formulario{
+  display: flex;
+  justify-content: flex-end;
+  margin-left: 208px;
+  gap: 8px;
+}
