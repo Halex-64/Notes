@@ -6,11 +6,16 @@ import { AdicionarComponent } from './componentes/adicionar/adicionar.component'
 const routes: Routes = [
   {
     path: 'home',
-    component: CorpoComponent
+    component: CorpoComponent,
   },
   {
     path: 'criar-nota',
-    component: AdicionarComponent
+    component: AdicionarComponent,
+  },
+  {
+    path: '',
+    redirectTo: 'home',
+    pathMatch: 'full',
   }
 ];
 
