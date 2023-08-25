@@ -3,5 +3,9 @@
     <img src="../../assets/images/imagem__fundo__sem__notas.png" alt="img_sem_notas">
     <p class="p__semNotas">Você ainda não possui nenhuma nota...</p>
   </div>
+
+  <div *ngFor="let nota of listaNotas">
+    <app-nota [nota] = "nota"></app-nota>
+  </div>
 </body>
 

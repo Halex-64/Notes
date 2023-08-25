@@ -6,5 +6,11 @@ import { Component } from '@angular/core';
   styleUrls: ['./corpo.component.css']
 })
 export class CorpoComponent {
-
+    listaNotas = [
+      {
+        titulo: "Titulo",
+        conteudo: "Conteudo",
+        tipo: "2",
+      }
+    ];
 }
