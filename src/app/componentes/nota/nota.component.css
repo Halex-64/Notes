@@ -9,11 +9,12 @@
 .cabecalho-nota{
   display: flex;
   width: 300px;
+  height: 36px;
   padding: 9px 8px;
   justify-content: center;
   align-items: center;
   gap: 23px;
-  margin-top: -16px;
+  margin-top: -40px;
   background-color: rgba(235, 141, 154, 0.50);
   border-radius: 5px;
 }
