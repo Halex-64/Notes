@@ -7,4 +7,9 @@ import { Component } from '@angular/core';
 })
 export class NotaComponent {
 
+  nota = {
+      titulo: "Titulo",
+      conteudo: "Conteudo Teste",
+      tipo: "tipo1",
+  }
 }
