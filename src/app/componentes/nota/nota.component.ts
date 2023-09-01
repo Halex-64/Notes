@@ -13,3 +13,12 @@ export class NotaComponent {
       tipo:"tipo1",
   }
 }
+
+function tamanhoNota(this: any):string {
+  if(this.nota.conteudo.length >= 150){
+    return 'nota-g'
+  }
+    return 'nota'
+  }
+
+

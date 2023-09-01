@@ -1,12 +1,14 @@
 <body id="body-semNotas">
-  <div class="semNotas">
-    <img src="../../assets/images/imagem__fundo__sem__notas.png" alt="img_sem_notas">
-    <p class="p__semNotas">Você ainda não possui nenhuma nota...</p>
+  <ng-template #semNotas>
+    <div class="semNotas">
+      <img src="../../assets/images/imagem__fundo__sem__notas.png" alt="img_sem_notas">
+      <p class="p__semNotas">Você ainda não possui nenhuma nota...</p>
+    </div>
+  </ng-template>
+  <div *ngIf="listaNotas.length < 0, else semNotas">
+    <div *ngFor="let nota of listaNotas">
+      <app-nota [nota] = "nota"></app-nota>
+    </div>
   </div>
-
-  <div *ngFor="let nota of listaNotas">
-    <app-nota [nota] = "nota"></app-nota>
-  </div>
-  
 </body>
 
