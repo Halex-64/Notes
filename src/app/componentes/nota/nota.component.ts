@@ -1,4 +1,5 @@
 import { Component, Input } from '@angular/core';
+import { Nota } from '../nota';
 
 @Component({
   selector: 'app-nota',
@@ -7,7 +8,8 @@ import { Component, Input } from '@angular/core';
 })
 export class NotaComponent {
 
-  @Input() nota = {
+  @Input() nota:Nota = {
+      id: 0,
       titulo: "Titulo",
       conteudo: "Conteudo Teste",
       tipo:"tipo1",
