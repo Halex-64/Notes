@@ -1,10 +1,12 @@
 .formulario-criar-nota{
-  margin-left: 200px;
+  margin-left: 675.5px;
   justify-content: center;
+  position: absolute;
   width: 500px;
   height: 350px;
   border-radius: 5px 5px 5px 5px;
   background: #202124;
+  box-shadow: #FFF;
 }
 .cabecalho-formulario{
   border: 5px 5px 5px 5px;

@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { NotaService } from '../nota.service';
+import { Nota } from '../nota';
 
 @Component({
   selector: 'app-corpo',
@@ -11,15 +12,11 @@ export class CorpoComponent {
   constructor(private service: NotaService) { }
 
   ngOnInit(): void {
-    this.service.listar()
+    this.service.listar().subscribe((listaNotas) => {
+      this.listaNotas = listaNotas
+    })
   }
+  
+    listaNotas:Nota[] = [];
 
-
-    listaNotas = [
-      {
-        titulo: "Titulo",
-        conteudo: "Conteudo",
-        tipo: "tipo1",
-      }
-    ];
 }
