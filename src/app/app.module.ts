@@ -7,7 +7,8 @@ import { CabecalhoComponent } from './componentes/cabecalho/cabecalho.component'
 import { CorpoComponent } from './componentes/corpo/corpo.component';
 import { AdicionarComponent } from './componentes/adicionar/adicionar.component';
 import { NotaComponent } from './componentes/nota/nota.component';
-
+import { FormsModule } from '@angular/forms';
+import { HttpClientModule } from '@angular/common/http';
 @NgModule({
   declarations: [
     AppComponent,
@@ -18,7 +19,9 @@ import { NotaComponent } from './componentes/nota/nota.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule,
+    HttpClientModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

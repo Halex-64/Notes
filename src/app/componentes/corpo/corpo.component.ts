@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { NotaService } from '../nota.service';
 
 @Component({
   selector: 'app-corpo',
@@ -6,11 +7,19 @@ import { Component } from '@angular/core';
   styleUrls: ['./corpo.component.css']
 })
 export class CorpoComponent {
+
+  constructor(private service: NotaService) { }
+
+  ngOnInit(): void {
+    this.service.listar()
+  }
+
+
     listaNotas = [
       {
         titulo: "Titulo",
         conteudo: "Conteudo",
-        tipo: "2",
+        tipo: "tipo1",
       }
     ];
 }
