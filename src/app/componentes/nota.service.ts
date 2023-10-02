@@ -7,6 +7,8 @@ import { Observable } from 'rxjs';
   providedIn: 'root'
 })
 export class NotaService {
+  service: any;
+  nota: any;
 
   constructor( private http: HttpClient) { }
 
@@ -16,6 +18,13 @@ export class NotaService {
     return this.http.get<Nota[]>(this.API)
   }
 
+  criar(nota: Nota): Observable<Nota>{
+    return this.http.post<Nota>(this.API,nota)
+  }
+
+  criarNota(){
+    this.service.criar(this.nota).subscribe()
+  }
 }
- 
+
 
