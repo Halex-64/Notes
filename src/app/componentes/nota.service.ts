@@ -7,9 +7,6 @@ import { Observable } from 'rxjs';
   providedIn: 'root'
 })
 export class NotaService {
-  service: any;
-  nota: any;
-
   constructor( private http: HttpClient) { }
 
   private readonly API = 'http://localhost:3000/notas'
@@ -20,10 +17,6 @@ export class NotaService {
 
   criar(nota: Nota): Observable<Nota>{
     return this.http.post<Nota>(this.API,nota)
-  }
-
-  criarNota(){
-    this.service.criar(this.nota).subscribe()
   }
 }
 

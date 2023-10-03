@@ -2,12 +2,19 @@
 <form class="formulario-criar-nota" action="">
   <div class="cabecalho-formulario">
   <span class="material-symbols-outlined icon">edit</span>
-  <input type="text" placeholder="Titulo">
+  <input type="text"
+  name="titulo"
+  [(ngModel)]="nota.titulo"
+   placeholder="Titulo">
     <div class="icons-formulario">
     <span class="material-symbols-outlined icon">push_pin</span>
     <a href="" routerLink="/home"><span  class="material-symbols-outlined icon">close</span></a>
     </div>
   </div>
-  <input class="criar-nota-input" type="text" placeholder="Criar uma nota...">
-  <a href=""class="botao-criar" (click)="criarNota()" routerLink="/notas" >Criar</a>
+  <input class="criar-nota-input"
+   type="text"
+   name="conteudo"
+   [(ngModel)] ="nota.conteudo"
+   placeholder="Criar uma nota...">
+  <a href=""class="botao-criar" routerLink="/notas" (click)="criarNota()">Criar</a>
 </form>

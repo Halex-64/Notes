@@ -10,13 +10,10 @@ import { Nota } from '../nota';
 export class CorpoComponent {
 
   constructor(private service: NotaService) { }
-
+  listaNotas:Nota[] = [];
   ngOnInit(): void {
     this.service.listar().subscribe((listaNotas) => {
       this.listaNotas = listaNotas
     })
   }
-  
-    listaNotas:Nota[] = [];
-
 }

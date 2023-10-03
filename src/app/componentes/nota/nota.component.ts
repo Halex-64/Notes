@@ -10,8 +10,8 @@ export class NotaComponent {
 
   @Input() nota:Nota = {
       id: 0,
-      titulo: "Titulo",
-      conteudo: "Conteudo Teste",
+      titulo: "",
+      conteudo: "",
       tipo:"tipo1",
   }
 }
