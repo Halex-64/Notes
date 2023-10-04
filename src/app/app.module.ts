@@ -9,13 +9,15 @@ import { AdicionarComponent } from './componentes/adicionar/adicionar.component'
 import { NotaComponent } from './componentes/nota/nota.component';
 import { FormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
+import { ExcluirNotaComponent } from './componentes/excluir-nota/excluir-nota.component';
 @NgModule({
   declarations: [
     AppComponent,
     CabecalhoComponent,
     CorpoComponent,
     AdicionarComponent,
-    NotaComponent
+    NotaComponent,
+    ExcluirNotaComponent
   ],
   imports: [
     BrowserModule,

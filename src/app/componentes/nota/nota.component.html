@@ -1,6 +1,8 @@
 <section class="nota {{ nota.tipo }}" [ngClass]="">
   <div class="cabecalho-nota">
     <p class="titulo-nota">{{ nota.titulo }}</p>
+    <a href="" routerLink="/excluir-nota/{{ nota.id }}"><span class="material-symbols-outlined"> delete </span></a>
+    <a href=""><span class="material-symbols-outlined"> edit </span></a>
   </div>
   <div class="conteudo-nota">
     <p>{{ nota.conteudo }}</p>

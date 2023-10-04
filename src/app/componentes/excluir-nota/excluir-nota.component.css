@@ -1,0 +1,12 @@
+.cabecalho_excluir{
+  display: flex;
+  width: 400px;
+  height: 34px;
+  padding: 3px 18px;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 10px;
+  flex-shrink: 0;
+}
+
+

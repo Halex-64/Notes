@@ -13,4 +13,8 @@
 .p__semNotas{
   color: rgba(255, 255, 255, 0.25)
 }
+.listaNotas{
+  display: flex;
+  justify-content: space-around;
+}
 

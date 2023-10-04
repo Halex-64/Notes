@@ -2,7 +2,7 @@ import { Component, NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { CorpoComponent } from './componentes/corpo/corpo.component';
 import { AdicionarComponent } from './componentes/adicionar/adicionar.component';
-import { NotaComponent } from './componentes/nota/nota.component';
+import { ExcluirNotaComponent } from './componentes/excluir-nota/excluir-nota.component';
 
 const routes: Routes = [
   {
@@ -17,6 +17,10 @@ const routes: Routes = [
     path: '',
     redirectTo: 'home',
     pathMatch: 'full',
+  },
+  {
+    path: 'excluir-nota/:id',
+    component: ExcluirNotaComponent,
   }
 ];
 

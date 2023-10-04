@@ -6,7 +6,7 @@
     </div>
   </ng-template>
   <!-- colocar classe e mudar o css -->
-  <div *ngIf="listaNotas.length > 0, else semNotas">
+  <div class="listaNotas" *ngIf="listaNotas.length > 0, else semNotas">
     <div *ngFor="let nota of listaNotas">
       <app-nota [nota] = "nota"></app-nota>
     </div>
